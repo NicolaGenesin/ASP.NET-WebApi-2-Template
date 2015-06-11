@@ -6,9 +6,9 @@ using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace WebApiApplication.ContainerControllerContract.Models
+namespace WebApiApplication.ContainerImpl.Models
 {
-    public partial class ContainerIdGetOKResponseContent
+    public partial class ContainerImplIdGetOKResponseContent
     {
         
 		[JsonProperty("title")]

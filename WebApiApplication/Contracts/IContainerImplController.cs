@@ -4,20 +4,20 @@ using System;
 using System.Collections.Generic;
 using System.Web.Http;
 using System.Web.Http.Description;
-using WebApiApplication.ContainerControllerContract.Models;
+using WebApiApplication.ContainerImpl.Models;
 
-namespace WebApiApplication.ContainerControllerContract
+namespace WebApiApplication.ContainerImpl
 {
-    public interface IContainersController
+    public interface IContainerImplController
     {
 
         IHttpActionResult Get([FromUri] decimal? pages = null,[FromUri] string genre = null);
 
         IHttpActionResult Post(string json,[FromUri] decimal? pages = null);
 
-        IHttpActionResult GetByContainerId([FromUri] string containerId);
+        IHttpActionResult GetByContainerImplId([FromUri] string containerImplId);
 
-        IHttpActionResult Delete([FromUri] string containerId);
+        IHttpActionResult Delete([FromUri] string containerImplId);
 
     }
 }

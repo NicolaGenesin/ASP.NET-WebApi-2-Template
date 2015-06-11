@@ -8,14 +8,14 @@ traits:
         pages:
           description: The number of pages to return
           type: number
-/containers:
+/containerImpl:
   is: [ paged ]
   get:
     queryParameters:
       genre:
         description: filter the container by genre
   post:
-  /{containerId}:
+  /{containerImplId}:
     get:
       responses:
         200:
