@@ -10,6 +10,7 @@ This project will be created on top of:
 - Microsoft WebApi 2.0
 - RAML, which is a simple and succinct way of describing practically-RESTful APIs. A single contract (myService.raml [e.g http://raml.org/]) will define controllers, interfaces and dtos.
 
+To define a RAML contract :https://github.com/mulesoft-labs/raml-dotnet-tools, or install directly from the Visual Studio extension gallery (Tools menu -> Extensions and Updates)
 
 DIF: SimpleInjector http://simpleinjector.readthedocs.org/en/latest/webapiintegration.html
 
