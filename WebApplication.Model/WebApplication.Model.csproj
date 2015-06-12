@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6C885887-D846-49E0-BFB6-F3D1FA2E8196}</ProjectGuid>
+    <ProjectGuid>{073C9D3C-469B-4BF1-A447-8F322C3DD2B6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WebApiApplication.Core</RootNamespace>
-    <AssemblyName>WebApiApplication.Core</AssemblyName>
+    <RootNamespace>WebApplication.Model</RootNamespace>
+    <AssemblyName>WebApplication.Model</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,15 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ContainerRepository.cs" />
-    <Compile Include="IContainerRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\WebApplication.Model\WebApplication.Model.csproj">
-      <Project>{073C9D3C-469B-4BF1-A447-8F322C3DD2B6}</Project>
-      <Name>WebApplication.Model</Name>
-    </ProjectReference>
+    <Compile Include="RepositoryObject.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

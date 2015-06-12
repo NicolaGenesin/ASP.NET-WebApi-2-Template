@@ -345,6 +345,10 @@
       <Project>{6C885887-D846-49E0-BFB6-F3D1FA2E8196}</Project>
       <Name>WebApiApplication.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WebApplication.Model\WebApplication.Model.csproj">
+      <Project>{073C9D3C-469B-4BF1-A447-8F322C3DD2B6}</Project>
+      <Name>WebApplication.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

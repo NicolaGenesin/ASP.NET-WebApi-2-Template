@@ -1,21 +1,38 @@
-﻿namespace WebApiApplication.Core
+﻿#region
+
+using System;
+using WebApplication.Model;
+
+#endregion
+
+namespace WebApiApplication.Core
 {
     public class ContainerRepository : IContainerRepository
     {
 
-        public object Get(decimal? pages, string genre) 
+        public RepositoryObject Get(decimal? pages, string genre)
         {
-            return new { Username = "my name", Password = "the password" };
+            // search on page by genre
+            return new RepositoryObject {Genre = "Dramatic"};
         }
 
-        public object Delete(string containerImplId)
+        public void Delete(string containerImplId)
         {
-            return true;
+            try
+            {
+                // delete
+            }
+            catch (Exception)
+            {
+                // manage
+            }
         }
 
-        public object Post(string json, decimal? pages)
+        public RepositoryObject Post(string json, decimal? pages)
         {
-            return new { Username = "my name", Password = "the password" };
+            //create your resource
+            return new RepositoryObject { Genre = "Dramatic", Author = "Paul Bailey", Name = "Less french words" };
         }
     }
+
 }

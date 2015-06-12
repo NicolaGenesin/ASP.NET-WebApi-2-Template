@@ -1,9 +1,9 @@
-# WebApi2 Template
+# WebApi2/RAML sample Project
 
 ![alt tag](http://blog.appliedis.com/wp-content/uploads/2013/03/ASP-NET-logo.png)
 ![alt tag](https://raw.githubusercontent.com/raml-org/raml-dotnet-parser/master/RAML.png)
 
-You can create your Web API project using this "Web API" starting project. The Web API template uses ASP.NET MVC just to provide the API help page. 
+This Web API template uses ASP.NET MVC just to provide the API help page. 
 
 This project will be created on top of:
 

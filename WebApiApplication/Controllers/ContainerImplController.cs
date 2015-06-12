@@ -1,6 +1,10 @@
 #region
 
+using System;
+using System.Net;
+using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Results;
 using WebApiApplication.ContainerImpl.Models;
 using WebApiApplication.Core;
 
@@ -29,14 +33,20 @@ namespace WebApiApplication.ContainerImpl
 
         public IHttpActionResult GetByContainerImplId([FromUri] string containerImplId)
         {
-            var result = new ContainerImplIdGetOKResponseContent();
-            return Ok(result);
+            return Ok(new ContainerImplIdGetOKResponseContent()); // ContainerImplIdGetOKResponseContent is an "api citizen model"
         }
 
         public IHttpActionResult Delete([FromUri] string containerImplId)
         {
-            return Ok(_containerRepository.Delete(containerImplId));
+            try
+            {
+                _containerRepository.Delete(containerImplId);
+                return Ok();
+            }
+            catch (Exception)
+            {
+                return new ResponseMessageResult(Request.CreateErrorResponse(HttpStatusCode.InternalServerError, new Exception()));
+            }
         }
-
     }
 }

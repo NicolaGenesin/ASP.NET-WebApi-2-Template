@@ -1,11 +1,11 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using WebApplication.Model;
 
 namespace WebApiApplication.Core
 {
     public interface IContainerRepository
     {
-        object Get(decimal? pages, string genre);
-        object Delete(string containerImplId);
-        object Post(string json, decimal? pages); 
+        RepositoryObject Get(decimal? pages, string genre);
+        void Delete(string containerImplId);
+        RepositoryObject Post(string json, decimal? pages);
     }
 }
