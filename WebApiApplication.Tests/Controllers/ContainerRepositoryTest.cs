@@ -7,12 +7,12 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace WebApiApplication.Tests.Controllers
 {
     [TestClass]
-    public class ValuesControllerTest
+    public class ContainerRepositoryTest 
     {
         [TestMethod]
         public void Get()
         {
-            // Arrange
+            // Arrange 
             // Act
             // Assert
         }
